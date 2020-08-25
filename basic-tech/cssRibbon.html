@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>CSS Ribbon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      background-color: #333;
+      box-sizing: border-box;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .box h3 {
+      position: relative;
+      left: -15px;
+      color: #fff;
+      text-align: center;
+      background-color: #169fff;
+      margin: 40px 0 0;
+      padding: 5px 0;
+      font-size: 36px;
+      text-transform: uppercase;
+      width: 430px;
+      text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+    .box h3:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 100%;
+      background-color: #085a93;
+      transform-origin: top left;
+      transform: skewY(-50deg);
+      transition: transform .5s;
+      z-index: -1;
+    }
+    .box:hover h3:before {
+      transform: skewY(50deg);
+    }
+    .box h3:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 15px;
+      height: 100%;
+      background-color: #085a93;
+      transform-origin: top right;
+      transform: skewY(-50deg);
+      transition: transform .5s;
+      z-index: -1;
+    }
+    .box:hover h3:after {
+      transform: skewY(50deg);
+    }
+    .box p {
+      padding: 0 20px;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>CSS 3D Box Design</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Ut quaerat quibusdam commodi atque dicta. Fugit, consequatur 
+      vel itaque accusantium mollitia suscipit quas atque, 
+      cumque inventore facilis officiis quasi, laudantium tempora.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Ut quaerat quibusdam commodi atque dicta. Fugit, consequatur 
+      vel itaque accusantium mollitia suscipit quas atque, 
+      cumque inventore facilis officiis quasi, laudantium tempora.
+    </p>
+  </div>
+</body>
+</html>
