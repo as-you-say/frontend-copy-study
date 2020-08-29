@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Diamond_Shape</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+    ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      width: 600px;
+      height: 300px;
+    }
+    ul li {
+      list-style: none;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      margin: -24.9px;
+      background: #000000;
+      transform: rotate(45deg);
+      transition: .5s;
+      overflow: hidden;
+      opacity: .5;
+    }
+    ul li:hover {
+      opacity: 1;
+    }
+    ul li.item1 {
+      top: 0;
+      left: 0;
+    }
+    ul li.item2 {
+      bottom: 0;
+      left: 25%;
+    }
+    ul li.item3 {
+      top: 0;
+      left: 50%;
+    }
+    ul li.item4 {
+      bottom: 0;
+      left: 75%;
+    }
+    ul li.item5 {
+      top: 0;
+      left: 100%;
+    }
+    ul li .bg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-45deg) scale(1.45);
+    }
+    ul li.item1 .bg {
+      background: url("https://bobo.muzlicdn.xyz/1592382179017-Freehand-1.jpg") center;
+      background-size: cover;
+    }
+    ul li.item2 .bg {
+      background: url("https://mir-s3-cdn-cf.behance.net/projects/max_808/b931ec103099877.Y3JvcCwxMDI2LDgwMyw3MTQsMA.png") center;
+      background-size: cover;
+    }
+    ul li.item3 .bg {
+      background: url("https://cdn.lapaninja.com/assets/images/mcube-thumb.jpg") center;
+      background-size: cover;
+    }
+    ul li.item4 .bg {
+      background: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2020/08/How_to_start_an_online_store__the_ultimate_guide_jpg_P8BknsPh.jpg") center;
+      background-size: cover;
+    }
+    ul li.item5 .bg {
+      background: url("https://www.demilked.com/magazine/wp-content/uploads/2020/08/scottish-fold-longhair-cat-drawing-face-expressions-fb14.png") center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="item1">
+      <div class="bg"></div>
+    </li>
+    <li class="item2">
+      <div class="bg"></div>
+    </li>
+    <li class="item3">
+      <div class="bg"></div>
+    </li>
+    <li class="item4">
+      <div class="bg"></div>
+    </li>
+    <li class="item5">
+      <div class="bg"></div>
+    </li>
+  </ul>
+</body>
+</html>

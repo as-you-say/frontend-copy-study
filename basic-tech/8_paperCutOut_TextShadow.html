@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Paper Cut Out - Text Shadow</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body {
+      margin: 0;
+      bottom: 0;
+      font-family: "arial black";
+      overflow: hidden;
+      background-color: #ccc;
+    }
+    .center {
+      margin: 200px 0 0 350px;
+    }
+    h1 {
+      font-size: 12em;
+      color: rgba(0, 0, 0, .2);
+      margin: 0;
+      padding: 0;
+      transform-origin: bottom;
+      transform: skewX(50deg);
+    }
+    h1:before {
+      content: attr(data-title);
+      position: absolute;
+      color: #fff;
+      transform-origin: bottom;
+      transform: skewX(-50deg) translate(-70px, 29px) scaleY(1.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1 data-title="IRSHAD">IRSHAD</h1>
+  </div>
+</body>
+</html>

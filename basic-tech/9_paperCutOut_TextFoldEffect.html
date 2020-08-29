@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Paper Cut Out - Text Fold Effect</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body {
+      margin: 0;
+      bottom: 0;
+      font-family: sans-serif;
+      background-color: #000;
+      overflow: hidden;
+    }
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: perspective(1000px) translate(-50%, -50%) skewY(15deg);
+      transition: .5s;
+    }
+    .center:hover {
+      transform: perspective(1000px) translate(-50%, -50%) skewY(0deg);
+    }
+    .center h1 span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 12em;
+      color: #fff;
+      transform-style: preserve-3d;
+      transition: .1s;
+    }
+    .center h1 span:nth-child(1) {
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+    .center h1 span:nth-child(2) {
+      color: #efeeee;
+      transform: translate(-50%, -50%) skewX(-60deg);
+      left: 0px;
+      clip-path: polygon(0 50%, 100% 50%, 100% 60%, 0 60%);
+    }
+    .center h1 span:nth-child(3) {
+      clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+      transform: translate(-50%, -50%) skewX(0);
+      left: -88px;
+    }
+    .center:hover h1 span:nth-child(2),
+    .center:hover h1 span:nth-child(3) {
+      transform: translate(-50%, -50%) skewX(0);
+      left: 0;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1>
+      <span>Text</span>
+      <span>Text</span>
+      <span>Text</span>
+    </h1>
+  </div>
+</body>
+</html>
